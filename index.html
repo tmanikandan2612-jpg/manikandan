@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manikandan D | Python Web Developer</title>
+  <meta name="description" content="Portfolio of Manikandan D, a B.Tech Artificial Intelligence and Data Science student and Python Web Developer building full-stack, AI and LLM-powered web applications.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <!-- Sticky Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand">MANIKANDAN.D</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="assets/resume.html" class="btn-primary" target="_blank">Download Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1 class="hero-name hero-anim delay-1">Manikandan D</h1>
+      <p class="hero-title hero-anim delay-2">Python Web Developer</p>
+      <p class="hero-subtitle hero-anim delay-3">Full Stack Developer | AI & LLM Application Developer</p>
+      <p class="hero-description hero-anim delay-4">I build modern web applications using Python and explore AI, Large Language Models and intelligent automation to create practical solutions across different domains.</p>
+      <div class="hero-cta hero-anim delay-5">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="assets/resume.html" class="btn-secondary" target="_blank">Download Resume</a>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/tmanikandan2612-jpg" target="_blank" aria-label="GitHub"><img src="assets/icons/github.svg" alt="GitHub"></a>
+        <a href="https://www.linkedin.com/in/manikanda-n-dhavami" target="_blank" aria-label="LinkedIn"><img src="assets/icons/linkedin.svg" alt="LinkedIn"></a>
+        <a href="mailto:tmmanikandan2612@gmail.com" aria-label="Email"><img src="assets/icons/email.svg" alt="Email"></a>
+      </div>
+    </div>
+    <div class="hero-image hero-anim delay-6">
+      <img src="assets/profile.jpg" alt="Manikandan D profile picture">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about reveal" id="about">
+    <h2>About Me</h2>
+    <p>I am a B.Tech Artificial Intelligence and Data Science student at SNS College of Technology. My primary focus is Python‑based web development, building full‑stack applications that integrate APIs, databases, and Large Language Models. I enjoy solving real‑world problems across domains such as career technology, agriculture, healthcare, and cybersecurity.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills reveal" id="skills">
+    <h2>Technical Skills</h2>
+    <div id="skills-container" class="skill-categories"></div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects reveal" id="projects">
+    <h2>Featured Projects</h2>
+    <p class="subtitle">Practical applications built using Python, Full‑Stack Development, AI and LLM technologies.</p>
+    <div class="project-filters" id="project-filters"></div>
+    <div class="project-grid" id="project-grid"></div>
+    <!-- Modal for project details -->
+    <div class="modal" id="project-modal" aria-hidden="true">
+      <div class="modal-content" role="dialog" aria-modal="true">
+        <button class="modal-close" aria-label="Close">×</button>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section (Omitted as per requirements) -->
+
+  <!-- Education Section -->
+  <section class="education reveal" id="education">
+    <h2>Education</h2>
+    <div id="education-container"></div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section class="certifications reveal" id="certifications">
+    <h2>Certifications</h2>
+    <div id="certifications-grid" class="grid"></div>
+  </section>
+
+  <!-- Resume CTA -->
+  <section class="resume-cta reveal" id="resume-cta">
+    <h2>Want to know more about my journey?</h2>
+    <p>Explore my technical skills, projects and learning journey through my resume.</p>
+    <a href="assets/resume.html" class="btn-primary" target="_blank">Download Resume</a>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact reveal" id="contact">
+    <h2>Let's Build Something Useful</h2>
+    <p>I'm interested in connecting with developers, students, builders and technology enthusiasts.</p>
+    <div class="contact-container">
+      <div class="contact-info">
+        <p><strong>Name:</strong> Manikandan D</p>
+        <p><strong>Email:</strong> <a href="mailto:tmmanikandan2612@gmail.com">tmmanikandan2612@gmail.com</a></p>
+        <p><strong>Phone:</strong> 6382918362</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/manikanda-n-dhavami" target="_blank">linkedin.com/in/manikanda-n-dhavami</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/tmanikandan2612-jpg" target="_blank">github.com/tmanikandan2612-jpg</a></p>
+      </div>
+      <form id="contact-form" action="https://formspree.io/f/xnpjvbab" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer reveal">
+    <p>© 2026 Manikandan D</p>
+    <div class="footer-social">
+      <a href="https://github.com/tmanikandan2612-jpg" target="_blank" aria-label="GitHub"><img src="assets/icons/github.svg" alt="GitHub"></a>
+      <a href="https://www.linkedin.com/in/manikanda-n-dhavami" target="_blank" aria-label="LinkedIn"><img src="assets/icons/linkedin.svg" alt="LinkedIn"></a>
+      <a href="mailto:tmmanikandan2612@gmail.com" aria-label="Email"><img src="assets/icons/email.svg" alt="Email"></a>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
